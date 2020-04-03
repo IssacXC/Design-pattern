@@ -13,17 +13,17 @@
 举例：SUV(A)是汽车(B)。  
 泛化关系表现为继承非抽象类。
 
-- 实现关系用一条带空心箭头的虚线表示；如下图：
+- 实现关系用一条带空心箭头的虚线表示；如下图：  
 ![alt 实现关系](./images/relationship/realize.png)  
 举例：汽车(A)是车(B)。
 实现关系表现为继承抽象类。
 
-- 聚合关系(aggregation)用一条带空心菱形箭头的实线表示，如下图:
+- 聚合关系(aggregation)用一条带空心菱形箭头的实线表示，如下图:  
 ![alt 聚合关系](./images/relationship/aggregation.png)  
 举例：公司(B)由员工(A)组成。  
 聚合关系的整体和部分不是强依赖。即使整体不存在了，部分依然存在。
 
-- 组合关系(composition)用一条带实心菱形箭头的实线表示，如下图:
+- 组合关系(composition)用一条带实心菱形箭头的实线表示，如下图:  
 ![alt 聚合关系](./images/relationship/composition.png)  
 举例：公司(B)由部门(A)组成。  
 聚合关系的整体和部分是强依赖。如果整体不存在了，部分也不存在了。
