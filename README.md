@@ -1,8 +1,6 @@
 # 设计模式
 > 设计模式(Design Pattern)是一套被反复使用、多数人知晓的、经过分类的、代码设计经验的总结。   
 使用设计模式的目的：为了代码可重用性、让代码更容易被他人理解、保证代码可靠性。 设计模式使代码编写真正工程化。
----
-文档参考了[图说设计模式](https://design-patterns.readthedocs.io/zh_CN/latest/index.html)和《JavaScript设计模式及开发实践》。
 
 ## 类之间的关系
 
@@ -66,10 +64,10 @@
 ### 创建型模式
 创建型模式提供了一种在创建对象的同时隐藏创建逻辑的方式，而不是使用 new 运算符直接实例化对象。这使得程序在判断针对某个给定实例需要创建哪些对象时更加灵活。
   - [单例模式(Singleton Pattern)](./doc/SingletonPattern.md)
-  - [抽象工厂模式(Abstract Factory Pattern)]()
-  - [工厂模式(Factory Pattern)]()
-  - [建造者模式(Builder Pattern)]()
-  - [原型模式(Prototype Pattern)]()
+  - [抽象工厂模式(Abstract Factory Pattern)](./doc/AbstractFactoryPattern.md)
+  - [工厂模式(Factory Pattern)](./doc/FactoryPattern.md)
+  - [建造者模式(Builder Pattern)](./doc/BuilderPattern.md)
+  - [原型模式(Prototype Pattern)](./doc/PrototypePattern.md)
 
 ### 结构型模式
 结构型模式关注类和对象的组合。继承的概念被用来组合接口和定义组合对象获得新功能的方式。
@@ -96,3 +94,21 @@
   - [策略模式(Strategy Pattern)]()
   - [模板模式(Template Pattern)]()
   - [访问者模式(Visitor Pattern)]()
+
+---
+文档参考了[图说设计模式](https://design-patterns.readthedocs.io/zh_CN/latest/index.html)和《JavaScript设计模式及开发实践》。
+
+代码使用Typescript语言编写，编译过程：
+
+```
+cd Design-pattern/code
+tsc --init
+```
+
+如果编译某一个设计模式可以采用如下命令： 
+
+```
+cd Design-pattern/code/singleton
+tsc --target ES5 --module system --outFile singleton.js singleton.ts
+```
+
