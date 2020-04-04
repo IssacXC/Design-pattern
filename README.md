@@ -8,33 +8,33 @@
 
 类的继承结构表现在UML中为：泛化(generalize)与实现(realize)：  
 继承关系为 is-a的关系；两个对象之间如果可以用 is-a 来表示，就是继承关系：（..是..）
-- 泛化关系用一条带空心箭头的实线表示；如下图：  
-![alt 泛化关系](./images/relationship/generalize.png)  
+- 泛化关系用一条带空心箭头的实线表示，箭头指向父类；如下图：  
+![泛化关系](./images/relationship/generalize.png)  
 举例：SUV(A)是汽车(B)。  
 泛化关系表现为继承非抽象类。
 
-- 实现关系用一条带空心箭头的虚线表示；如下图：  
-![alt 实现关系](./images/relationship/realize.png)  
+- 实现关系用一条带空心箭头的虚线表示，箭头指向接口（抽象类）；如下图：  
+![实现关系](./images/relationship/realize.png)  
 举例：汽车(A)是车(B)。
 实现关系表现为继承抽象类。
 
-- 聚合关系(aggregation)用一条带空心菱形箭头的实线表示，如下图:  
-![alt 聚合关系](./images/relationship/aggregation.png)  
+- 聚合关系(aggregation)用一条带空心菱形箭头的实线表示，菱形指向整体，如下图:  
+![聚合关系](./images/relationship/aggregation.png)  
 举例：公司(B)由员工(A)组成。  
 聚合关系的整体和部分不是强依赖。即使整体不存在了，部分依然存在。
 
-- 组合关系(composition)用一条带实心菱形箭头的实线表示，如下图:  
-![alt 聚合关系](./images/relationship/composition.png)  
+- 组合关系(composition)用一条带实心菱形箭头的实线表示，菱形指向整体，如下图:  
+![组合关系](./images/relationship/composition.png)  
 举例：公司(B)由部门(A)组成。  
 聚合关系的整体和部分是强依赖。如果整体不存在了，部分也不存在了。
 
 - 关联关系(association)描述不同类的对象之间的结构关系；它是一种静态关系， 通常与运行状态无关，一般由常识等因素决定的；它一般用来定义对象之间静态的、天然的结构； 所以，关联关系是一种“强关联”的关系。用一条直线表示，默认不强调方向，表示对象间相互知道；如果特别强调方向，如下图，表示A知道B，但B不知道A。如下图:  
-![alt 关联关系](./images/relationship/association.png)  
+![关联关系](./images/relationship/association.png)  
 举例：乘车人和车票的关联。  
 在最终代码中，关联对象通常是以成员变量的形式实现。
 
-- 依赖关系(dependency)描述一个对象在运行期间会用到另一个对象的关系。与关联关系不同的是，它是一种临时性的关系，通常在运行期间产生，并且随着运行时的变化，依赖关系也可能发生变化。依赖也有方向，双向依赖是一种非常糟糕的结构，我们总是应该保持单向依赖，杜绝双向依赖的产生。依赖关系是用一套带箭头的虚线表示的；如下图表示A依赖于B:
-![alt 依赖关系](./images/relationship/dependency.png)  
+- 依赖关系(dependency)描述一个对象在运行期间会用到另一个对象的关系。与关联关系不同的是，它是一种临时性的关系，通常在运行期间产生，并且随着运行时的变化，依赖关系也可能发生变化。依赖也有方向，双向依赖是一种非常糟糕的结构，我们总是应该保持单向依赖，杜绝双向依赖的产生。依赖关系是用一套带箭头的虚线表示的；如下图表示A依赖于B:  
+![依赖关系](./images/relationship/dependency.png)  
 在最终代码中，依赖关系体现为类构造方法及类方法的传入参数，箭头的指向为调用关系。依赖关系除了临时知道对方外，还是“使用”对方的方法和属性。
 
 ##  设计模式的六大原则
@@ -64,6 +64,7 @@
 
 ## 设计模式的类型
 ### 创建型模式
+创建型模式提供了一种在创建对象的同时隐藏创建逻辑的方式，而不是使用 new 运算符直接实例化对象。这使得程序在判断针对某个给定实例需要创建哪些对象时更加灵活。
   - [单例模式(Singleton Pattern)](./doc/SingletonPattern.md)
   - [抽象工厂模式(Abstract Factory Pattern)]()
   - [工厂模式(Factory Pattern)]()
@@ -71,6 +72,7 @@
   - [原型模式(Prototype Pattern)]()
 
 ### 结构型模式
+结构型模式关注类和对象的组合。继承的概念被用来组合接口和定义组合对象获得新功能的方式。
   - [适配器模式(Adapter Pattern)]()
   - [桥接模式(Bridge Pattern)]()
   - [过滤器模式(Filter、Criteria Pattern)]()
@@ -81,6 +83,7 @@
   - [代理模式(Proxy Pattern)]()
 
 ### 行为型模式
+行为型模式特别关注对象之间的通信。
   - [责任链模式(Chain of Responsibility Pattern)]()
   - [命令模式(Command Pattern)]()
   - [解释器模式(Interpreter Pattern)]()
