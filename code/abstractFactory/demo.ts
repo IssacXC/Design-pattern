@@ -1,3 +1,4 @@
+/// <reference path="abstractFactory.ts" />
 namespace AbstractFactoryPattern {
   // Abstract factory1
   var factory1: AbstractFactoryPattern.AbstractFactory = new AbstractFactoryPattern.ConcreteFactory1()

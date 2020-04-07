@@ -1,3 +1,4 @@
+/// <reference path="factoryMethod.ts" />
 namespace factoryMethodPattern {
   let factory: Factory = new ConcreteFactory()
   let test = factory.factoryMethod()

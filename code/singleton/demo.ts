@@ -1,3 +1,4 @@
+/// <reference path="singleton.ts" />
 namespace SingletonPattern {
   let singleton1 = Singleton.getInstance()
   let singleton2 = Singleton.getInstance()

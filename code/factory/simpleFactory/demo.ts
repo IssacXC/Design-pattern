@@ -1,3 +1,4 @@
+/// <reference path="simpleFactory.ts" />
 namespace simpleFactoryPattern {
 	export namespace Demo {
 		export function show() : void {
