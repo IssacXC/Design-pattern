@@ -63,11 +63,11 @@
 ## 设计模式的类型
 ### 创建型模式
 创建型模式提供了一种在创建对象的同时隐藏创建逻辑的方式，而不是使用 new 运算符直接实例化对象。这使得程序在判断针对某个给定实例需要创建哪些对象时更加灵活。
-  - [单例模式(Singleton Pattern)](./doc/SingletonPattern.md)
-  - [抽象工厂模式(Abstract Factory Pattern)](./doc/AbstractFactoryPattern.md)
-  - [工厂模式(Factory Pattern)](./doc/FactoryPattern.md)
-  - [建造者模式(Builder Pattern)](./doc/BuilderPattern.md)
-  - [原型模式(Prototype Pattern)](./doc/PrototypePattern.md)
+  - [单例模式(Singleton Pattern)](./doc/Creational/SingletonPattern.md)
+  - [抽象工厂模式(Abstract Factory Pattern)](./doc/Creational/AbstractFactoryPattern.md)
+  - [工厂模式(Factory Pattern)](./doc/Creational/FactoryPattern.md)
+  - [建造者模式(Builder Pattern)](./doc/Creational/BuilderPattern.md)
+  - [原型模式(Prototype Pattern)](./doc/Creational/PrototypePattern.md)
 
 ### 结构型模式
 结构型模式关注类和对象的组合。继承的概念被用来组合接口和定义组合对象获得新功能的方式。

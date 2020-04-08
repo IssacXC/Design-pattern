@@ -7,8 +7,8 @@
 - ConcreteBuilder：具体建造者
 - Director：指挥者
 - Product：产品角色
-![Singleton](../images/pattern/Builder.png)  
-### [代码实现](../code/builder)
+![Singleton](../../images/pattern/Builder.png)  
+### [代码实现](../../code/builder)
 ### 优点
 - 在建造者模式中， 客户端不必知道产品内部组成的细节，将产品本身与产品的创建过程解耦，使得相同的创建过程可以创建不同的产品对象。
 - 每一个具体建造者都相对独立，而与其他的具体建造者无关，因此可以很方便地替换具体建造者或增加新的具体建造者， 用户使用不同的具体建造者即可得到不同的产品对象 。

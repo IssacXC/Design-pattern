@@ -8,8 +8,8 @@
 - ConcreteFactory：具体工厂
 - AbstractProduct：抽象产品
 - Product：具体产品
-![AbstractFactory](../images/pattern/AbstractFactory.png)  
-### [代码实现](../code/abstractFactory)
+![AbstractFactory](../../images/pattern/AbstractFactory.png)  
+### [代码实现](../../code/abstractFactory)
 ### 优点
 - 抽象工厂模式可以实现高内聚低耦合的设计目的。
 - 当一个产品族中的多个对象被设计成一起工作时，它能够保证客户端始终只使用同一个产品族中的对象。

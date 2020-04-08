@@ -8,8 +8,8 @@
 - Factory：工厂角色，负责实现创建所有实例的内部逻辑。
 - Product：抽象产品角色，是所创建的所有对象的父类，负责描述所有实例所共有的公共接口。
 ConcreteProduct：具体产品角色，是创建目标，所有创建的对象都充当这个角色的某个具体类的实例。
-![SimpleFactory](../images/pattern/SimpleFactory.png)  
-#### [代码实现](../code/factory/simpleFactory)
+![SimpleFactory](../../images/pattern/SimpleFactory.png)  
+#### [代码实现](../../code/factory/simpleFactory)
 #### 优点
 - 工厂类含有必要的判断逻辑，可以决定在什么时候创建哪一个产品类的实例，客户端可以免除直接创建产品对象的责任，而仅仅“消费”产品；简单工厂模式通过这种做法实现了对责任的分割，它提供了专门的工厂类用于创建对象。
 - 客户端无须知道所创建的具体产品类的类名，只需要知道具体产品类所对应的参数即可，对于一些复杂的类名，通过简单工厂模式可以减少使用者的记忆量。
