@@ -61,7 +61,7 @@
 合成复用原则是指：尽量使用合成/聚合的方式，而不是使用继承。
 
 ## 设计模式的类型
-### 创建型模式
+### 创建型模式(Creational Patterns)
 创建型模式提供了一种在创建对象的同时隐藏创建逻辑的方式，而不是使用 new 运算符直接实例化对象。这使得程序在判断针对某个给定实例需要创建哪些对象时更加灵活。
   - [单例模式(Singleton Pattern)](./doc/Creational/SingletonPattern.md)
   - [抽象工厂模式(Abstract Factory Pattern)](./doc/Creational/AbstractFactoryPattern.md)
@@ -69,18 +69,18 @@
   - [建造者模式(Builder Pattern)](./doc/Creational/BuilderPattern.md)
   - [原型模式(Prototype Pattern)](./doc/Creational/PrototypePattern.md)
 
-### 结构型模式
+### 结构型模式(Structural Patterns)
 结构型模式关注类和对象的组合。继承的概念被用来组合接口和定义组合对象获得新功能的方式。
-  - 适配器模式(Adapter Pattern)
-  - 桥接模式(Bridge Pattern)
-  - 过滤器模式(Filter、Criteria Pattern)
-  - 组合模式(Composite Pattern)
-  - 装饰器模式(Decorator Pattern)
-  - 外观模式(Facade Pattern)
-  - 享元模式(Flyweight Pattern)
-  - 代理模式(Proxy Pattern)
+  - [适配器模式(Adapter Pattern)](./doc/Structural/AdapterPattern.md)
+  - [桥接模式(Bridge Pattern)](./doc/Structural/BridgePattern.md)
+  - [过滤器模式(Filter Pattern)](./doc/Structural/FilterPattern.md)
+  - [组合模式(Composite Pattern)](./doc/Structural/CompositePattern.md)
+  - [装饰器模式(Decorator Pattern)](./doc/Structural/DecoratorPattern.md)
+  - [外观模式(Facade Pattern)](./doc/Structural/FacadePattern.md)
+  - [享元模式(Flyweight Pattern)](./doc/Structural/FlyweightPattern.md)
+  - [代理模式(Proxy Pattern)](./doc/Structural/ProxyPattern.md)
 
-### 行为型模式
+### 行为型模式(Behavioral Patterns)
 行为型模式特别关注对象之间的通信。
   - 责任链模式(Chain of Responsibility Pattern)
   - 命令模式(Command Pattern)

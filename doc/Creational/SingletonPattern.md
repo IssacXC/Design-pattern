@@ -13,6 +13,7 @@
 1. 单例类的构造函数为私有；
 2. 提供一个自身的静态私有成员变量；
 3. 提供一个公有的静态工厂方法。  
+
 ![Singleton](../../images/pattern/Singleton.png)  
 
 ### [代码实现](../../code/singleton)
