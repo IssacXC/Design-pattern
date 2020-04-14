@@ -39,11 +39,18 @@
 - 关联关系(association)描述不同类的对象之间的结构关系；它是一种静态关系， 通常与运行状态无关，一般由常识等因素决定的；它一般用来定义对象之间静态的、天然的结构； 所以，关联关系是一种“强关联”的关系。用一条直线表示，默认不强调方向，表示对象间相互知道；如果特别强调方向，如下图，表示A知道B，但B不知道A。如下图:  
 ![关联关系](./images/relationship/association.png)  
 举例：乘车人和车票的关联。  
-在最终代码中，关联对象通常是以成员变量的形式实现。
+在最终代码中，关联对象通常是以成员变量的形式实现，一般以类属性表示这两个类存在关联关系。
+关联关系又可以进一步分为单向关联、双向关联和自关联。
+    1. 单向关联：即一个类持有另一个类的实例作为属性。在UML类图中单向关联用一个带箭头的直线表示：
+    ![单向关联](./images/relationship/unidirectionalAssociation.png)  
+    2. 双向关联：即类双方各自持有对方类型的成员变量。在UML类图中，双向关联用一个不带箭头的直线表示：
+    ![双向关联](./images/relationship/bidirectionalAssociation.png)  
+    3. 自关联:即一个类持有自身类型的另一个实例作为属性。自关联在UML类图中用一个带有箭头且指向自身的直线表示：
+    ![自关联](./images/relationship/selfAssociation.png)  
 
-- 依赖关系(dependency)描述一个对象在运行期间会用到另一个对象的关系。与关联关系不同的是，它是一种临时性的关系，通常在运行期间产生，并且随着运行时的变化，依赖关系也可能发生变化。依赖也有方向，双向依赖是一种非常糟糕的结构，我们总是应该保持单向依赖，杜绝双向依赖的产生。依赖关系是用一套带箭头的虚线表示的；如下图表示A依赖于B:  
+- 依赖关系(dependency)描述一个对象在运行期间会用到另一个对象的关系。与关联关系不同的是，它是一种临时性的关系，通常在运行期间产生，并且随着运行时的变化，依赖关系也可能发生变化。依赖也有方向，双向依赖是一种非常糟糕的结构，我们总是应该保持单向依赖，杜绝双向依赖的产生。依赖关系是用一套带箭头的虚线表示的，箭头指向被依赖的一方；如下图表示A依赖于B:  
 ![依赖关系](./images/relationship/dependency.png)  
-在最终代码中，依赖关系体现为类构造方法及类方法的传入参数，箭头的指向为调用关系。依赖关系除了临时知道对方外，还是“使用”对方的方法和属性。
+在最终代码中，依赖关系体现为类构造方法及类方法的传入参数，箭头的指向为调用关系。依赖关系除了临时知道对方外，还是“使用”对方的方法和属性。假设类A的变化引起了类B的变化，则说名类B依赖于类A。
 
 ##  设计模式的六大原则
 1. 开闭原则(Open Close Principle)
@@ -83,7 +90,6 @@
 结构型模式关注类和对象的组合。继承的概念被用来组合接口和定义组合对象获得新功能的方式。
   - [适配器模式(Adapter Pattern)](./doc/Structural/AdapterPattern.md)
   - [桥接模式(Bridge Pattern)](./doc/Structural/BridgePattern.md)
-  - [过滤器模式(Filter Pattern)](./doc/Structural/FilterPattern.md)
   - [组合模式(Composite Pattern)](./doc/Structural/CompositePattern.md)
   - [装饰器模式(Decorator Pattern)](./doc/Structural/DecoratorPattern.md)
   - [外观模式(Facade Pattern)](./doc/Structural/FacadePattern.md)

@@ -23,14 +23,14 @@ namespace FacadePattern {
     private part3: Part3 = new Part3()
 
     public operation1(): void {
-      console.log("`operation1` 方法被调用 ===")
+      console.log("调用`operation1` 方法 ===")
       this.part1.method1()
       this.part2.method2()
       console.log("==========================")
     }
 
     public operation2(): void {
-      console.log("`operation2` 方法被调用 ===")
+      console.log("调用`operation2` 方法 ===")
       this.part1.method1()
       this.part3.method3()
       console.log("==========================")
