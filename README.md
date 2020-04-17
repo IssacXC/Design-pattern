@@ -98,18 +98,17 @@
 
 ### 行为型模式(Behavioral Patterns)
 行为型模式特别关注对象之间的通信。
-  - 责任链模式(Chain of Responsibility Pattern)
-  - 命令模式(Command Pattern)
-  - 解释器模式(Interpreter Pattern)
-  - 迭代器模式(Iterator Pattern)
-  - 中介者模式(Mediator Pattern)
-  - 备忘录模式(Memento Pattern)
-  - 观察者模式(Observer Pattern)
-  - 状态模式(State Pattern)
-  - 空对象模式(Null Object Pattern)
-  - 策略模式(Strategy Pattern)
-  - 模板模式(Template Pattern)
-  - 访问者模式(Visitor Pattern)
+  - [责任链模式(Chain of Responsibility Pattern)](./doc/Behavioral/ChainofResponsibilityPattern.md)
+  - [命令模式(Command Pattern)](./doc/Behavioral/CommandPattern.md)
+  - [解释器模式(Interpreter Pattern)](./doc/Behavioral/InterpreterPattern.md)
+  - [迭代器模式(Iterator Pattern)](./doc/Behavioral/IteratorPattern.md)
+  - [中介者模式(Mediator Pattern)](./doc/Behavioral/MediatorPattern.md)
+  - [备忘录模式(Memento Pattern)](./doc/Behavioral/MementoPattern.md)
+  - [观察者模式(Observer Pattern)](./doc/Behavioral/ObserverPattern.md)
+  - [状态模式(State Pattern)](./doc/Behavioral/StatePattern.md)
+  - [策略模式(Strategy Pattern)](./doc/Behavioral/StrategyPattern.md)
+  - [模板模式(Template Pattern)](./doc/Behavioral/TemplatePattern.md)
+  - [访问者模式(Visitor Pattern)](./doc/Behavioral/VisitorPattern.md)
 
 ---
 文档参考了[图说设计模式](https://design-patterns.readthedocs.io/zh_CN/latest/index.html)和《JavaScript设计模式及开发实践》。
