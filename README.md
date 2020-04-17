@@ -98,7 +98,7 @@
 
 ### 行为型模式(Behavioral Patterns)
 行为型模式特别关注对象之间的通信。
-  - [责任链模式(Chain of Responsibility Pattern)](./doc/Behavioral/ChainofResponsibilityPattern.md)
+  - [职责链模式(Chain of Responsibility Pattern)](./doc/Behavioral/ChainofResponsibilityPattern.md)
   - [命令模式(Command Pattern)](./doc/Behavioral/CommandPattern.md)
   - [解释器模式(Interpreter Pattern)](./doc/Behavioral/InterpreterPattern.md)
   - [迭代器模式(Iterator Pattern)](./doc/Behavioral/IteratorPattern.md)
