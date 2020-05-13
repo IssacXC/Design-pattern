@@ -17,8 +17,8 @@
 实现关系表现为继承抽象类。
 > 抽象类和接口的区别  
 > - 从形态上看
-> 1. 抽象类可以给出一些成员的实现，接口却不包含成员的实现；
-> 2. 抽象类的抽象成员可被子类部分实现，接口的成员需要实现类完全实现，一个类只能继承一个抽象类，但可实现多个接口等等。  
+> 1. 抽象类可以给出一些成员的实现，接口却不包含成员的实现。
+> 2. 抽象类的抽象成员可被子类部分实现，接口的成员需要实现类完全实现，一个类只能继承一个抽象类，但可实现多个接口等等。
 > - 如何区分
 > 1. 类是对对象的抽象，抽象类是对类的抽象；接口是对行为的抽象。
 > 2. 若行为跨越不同类的对象，可使用接口；对于一些相似的类对象，用继承抽象类。
@@ -111,7 +111,7 @@
   - [访问者模式(Visitor Pattern)](./doc/Behavioral/VisitorPattern.md)
 
 ---
-文档参考了[图说设计模式](https://design-patterns.readthedocs.io/zh_CN/latest/index.html)和《JavaScript设计模式及开发实践》。
+文档参考了[图说设计模式](https://design-patterns.readthedocs.io/zh_CN/latest/index.html)、[DesignPattern文集](https://www.jianshu.com/nb/18021831)和《JavaScript设计模式及开发实践》。
 
 代码使用Typescript语言编写，编译过程：
 
