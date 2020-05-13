@@ -107,7 +107,7 @@
   - [观察者模式(Observer Pattern)](./doc/Behavioral/ObserverPattern.md)
   - [状态模式(State Pattern)](./doc/Behavioral/StatePattern.md)
   - [策略模式(Strategy Pattern)](./doc/Behavioral/StrategyPattern.md)
-  - [模板模式(Template Pattern)](./doc/Behavioral/TemplatePattern.md)
+  - [模板方法模式(Template Method Pattern)](./doc/Behavioral/TemplatePattern.md)
   - [访问者模式(Visitor Pattern)](./doc/Behavioral/VisitorPattern.md)
 
 ---
