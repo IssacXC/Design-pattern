@@ -5,7 +5,7 @@ namespace factoryMethodPattern {
 
   export class ConcreteProduct implements Product {
     use = (param?: any) => {
-      return "ConcreteProduct的use方法"
+      return "ConcreteProduct"
     }
   }
 

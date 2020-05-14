@@ -1,6 +1,6 @@
 namespace CommandPattern {
   export abstract class Command {
-    public execute(): void {}
+    abstract execute(): void
   }
 
   export class ConcreteCommand1 extends Command {
@@ -42,7 +42,7 @@ namespace CommandPattern {
 
   export class Receiver {
     public action(): void {
-      console.log("action called!")
+      console.log("Receiver")
     }
   }
 }

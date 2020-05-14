@@ -8,8 +8,8 @@ namespace MediatorPattern {
     constructor(mediator: Mediator) {
       this.mediator = mediator
     }
-    public send(msg: string): void {}
-    public receive(msg: string): void {}
+    abstract send(msg: string): void
+    abstract receive(msg: string): void
   }
 
   export class ConcreteColleagueA extends Colleague {

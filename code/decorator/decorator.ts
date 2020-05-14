@@ -9,9 +9,8 @@ namespace DecoratorPattern {
     constructor(s: String) {
       this.s = s
     }
-
     public operation(): void {
-      console.log(this.s, "实现了ConcreteComponent的operation方法")
+      console.log(this.s, "ConcreteComponent")
     }
   }
 
@@ -29,7 +28,7 @@ namespace DecoratorPattern {
     }
 
     public operation(): void {
-      console.log(this.id, "实现了装饰器的operation方法")
+      console.log(this.id, "Decorator")
       this.component.operation()
     }
   }
@@ -41,7 +40,7 @@ namespace DecoratorPattern {
 
     public operation(): void {
       super.operation()
-      console.log(this.Id, "实现了ConcreteDecorator的Operation方法")
+      console.log(this.Id, "ConcreteDecorator")
     }
   }
 }

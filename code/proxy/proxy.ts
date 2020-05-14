@@ -11,9 +11,9 @@ namespace ProxyPattern {
     }
 
     public request(): void {
-      console.log("代理请求", this.s)
+      console.log("Proxy", this.s)
       if (this.realSubject === null || this.realSubject === undefined) {
-        console.log("创建新的RealSubject对象。")
+        console.log("new RealSubject")
         this.realSubject = new RealSubject(this.s)
       }
       this.realSubject.request()
@@ -27,7 +27,7 @@ namespace ProxyPattern {
       this.s = s
     }
     public request(): void {
-      console.log(this.s, " 调用了RealSubject的request方法")
+      console.log(this.s, "RealSubject request")
     }
   }
 }

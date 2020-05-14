@@ -9,7 +9,7 @@ namespace PrototypePattern {
       return new Concrete1()
     }
     toString(): string {
-      return "This is Concrete1"
+      return "Concrete1"
     }
   }
 
@@ -19,7 +19,7 @@ namespace PrototypePattern {
     }
 
     toString(): string {
-      return "This is Concrete2"
+      return "Concrete2"
     }
   }
 

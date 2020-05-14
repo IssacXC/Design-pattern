@@ -1,6 +1,6 @@
 namespace ChainOfResponsibilityPattern {
 
-  export class Handler {
+  export abstract class Handler {
     private handler: Handler
     private req: number
     constructor(req: number) {
@@ -16,9 +16,7 @@ namespace ChainOfResponsibilityPattern {
         this.handler.operation(msg, req)
       }
     }
-    public handlerRequest(msg: string): void {
-      throw new Error("Abstract method!")
-    }
+    abstract handlerRequest(msg: string): void
   }
 
   export class ConcreteHandler1 extends Handler {

@@ -1,13 +1,11 @@
 namespace BridgePattern {
 
-  export class Abstraction {
+  export abstract class Abstraction {
     implementor: Implementor
     constructor(imp: Implementor) {
       this.implementor = imp
     }
-    public operation(s: String): void {
-      throw new Error("这是抽象方法!")
-    }
+    abstract operation(s: String): void
   }
 
   export class RefinedAbstractionA extends Abstraction {
@@ -15,7 +13,7 @@ namespace BridgePattern {
       super(imp)
     }
     public operation(s: String): void {
-      console.log("RefinedAbstractionA的operation方法")
+      console.log("RefinedAbstractionA")
       this.implementor.operationImp(s)
     }
   }
@@ -25,7 +23,7 @@ namespace BridgePattern {
       super(imp)
     }
     public operation(s: String): void {
-      console.log("RefinedAbstractionB的operation方法")
+      console.log("RefinedAbstractionB")
       this.implementor.operationImp(s)
     }
   }
@@ -36,14 +34,14 @@ namespace BridgePattern {
 
   export class ConcreteImplementorA implements Implementor {
     public operationImp(s: any) : void {
-      console.log("`operationImp`方法")
+      console.log("ConcreteImplementorA")
       console.log(s)
     }
   }
 
   export class ConcreteImplementorB implements Implementor {
     public operationImp(s: any) : void {
-      console.log("`operationImp`方法")
+      console.log("ConcreteImplementorB")
       console.log(s)
     }
   }

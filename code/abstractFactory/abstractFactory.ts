@@ -12,23 +12,23 @@ namespace AbstractFactoryPattern {
 
   export class ProductA1 implements AbstractProductA {
     useA = () => {
-      return "ProductA1的useA方法"
+      return "ProductA1"
     }
   }
   export class ProductB1 implements AbstractProductB {
     useB = () => {
-      return "ProductB1的useB方法"
+      return "ProductB1"
     }
   }
 
   export class ProductA2 implements AbstractProductA {
     useA = () => {
-      return "ProductA2的useA方法"
+      return "ProductA2"
     }
   }
   export class ProductB2 implements AbstractProductB {
     useB = () => {
-      return "ProductB2的useB方法"
+      return "ProductB2"
     }
   }
 

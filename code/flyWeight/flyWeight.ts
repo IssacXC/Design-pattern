@@ -10,7 +10,7 @@ namespace FlyweightPattern {
       this.instrinsicState = instrinsicState
     }
     public operation(s: String): void {
-      console.log("调用ConcreteFlyweight的operation方法", s)
+      console.log("ConcreteFlyweight", s)
     }
   }
 
@@ -22,7 +22,7 @@ namespace FlyweightPattern {
       }
 
       public operation(s: String): void {
-        console.log("`调用UnsharedConcreteFlyweight的operation方法", s)
+        console.log("`UnsharedConcreteFlyweight", s)
       }
   }
 
